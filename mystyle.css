@@ -62,12 +62,180 @@ nav a.active {
 
 /* Main Content */
 main {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 80px 50px;
+    background: linear-gradient(
+        160deg,
+        rgba(253, 216, 216, 1) 36%,
+        rgba(255, 255, 255, 1) 92%
+    );
+}
+
+/* Marquee Banner */
+.marquee-container {
+    background: linear-gradient(
+        160deg,
+        rgba(253, 216, 216, 1) 36%,
+        rgba(255, 255, 255, 1) 92%
+    );
+    color: #1b1616;
+    padding: 12px 0;
+    margin: -80px -50px 40px -50px;
+    overflow: hidden;
+}
+
+.marquee-container marquee {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Quote/Cite Styling */
+.quote-section {
+    background: #f5f5f5;
+    border-left: 4px solid #333;
+    padding: 20px 24px;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.quote-section cite {
+    font-style: italic;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+    display: block;
+}
+
+.quote-author {
+    color: #333;
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.resume-quote {
+    background: #f9f9f9;
+    border-left: 4px solid #333;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 4px;
+}
+
+.resume-quote cite {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    display: block;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
 /* Home Page */
+.main-intro {
+    background-image: url("images/contact-bg.jpg");
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.audio-intro {
+    margin-top: 20px;
+}
+
+.audio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 450px;
+}
+
+.audio-intro .audio-wrapper img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.audio-wrapper audio {
+    flex: 1;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.audio-label {
+    margin-top: 12px;
+    margin-left: 36px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Skills Table */
+.skills-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.skills-table thead {
+    background: #333;
+    color: #fff;
+}
+
+.skills-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.skills-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
+
+.skills-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.skills-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #333 0%, #666 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
 .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,7 +245,7 @@ main {
 
 .profile-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -315,6 +483,10 @@ footer p {
 .contact-page,
 .gallery-page {
     padding: 60px 50px;
+}
+
+.contact-page {
+    background-image: url("images/contact-bg.jpg");
 }
 
 .page-subtitle {
@@ -653,6 +825,11 @@ footer p {
         padding: 60px 30px;
     }
 
+    .main-intro {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
     .intro {
         gap: 50px;
     }
@@ -698,6 +875,43 @@ footer p {
 
     main {
         padding: 40px 20px;
+    }
+
+    .main-intro {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    /* Marquee */
+    .marquee-container {
+        margin: -40px -20px 30px -20px;
+        padding: 10px 0;
+    }
+
+    .marquee-container marquee {
+        font-size: 14px;
+    }
+
+    /* Quote */
+    .quote-section,
+    .resume-quote {
+        padding: 16px 20px;
+        margin: 20px 0;
+    }
+
+    .quote-section cite,
+    .resume-quote cite {
+        font-size: 15px;
+    }
+
+    .quote-author {
+        font-size: 14px;
+    }
+
+    /* Address */
+    address {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     /* Home Page */
@@ -871,6 +1085,38 @@ footer p {
         padding: 30px 15px;
     }
 
+    /* Marquee */
+    .marquee-container {
+        margin: -30px -15px 20px -15px;
+        padding: 8px 0;
+    }
+
+    .marquee-container marquee {
+        font-size: 13px;
+    }
+
+    /* Quote */
+    .quote-section,
+    .resume-quote {
+        padding: 12px 16px;
+        margin: 16px 0;
+    }
+
+    .quote-section cite,
+    .resume-quote cite {
+        font-size: 14px;
+    }
+
+    .quote-author {
+        font-size: 13px;
+    }
+
+    /* Address */
+    address {
+        font-size: 13px;
+    }
+
+    /* Home Page */
     .intro-text h1 {
         font-size: 28px;
     }
