@@ -26,10 +26,37 @@
             >
         </header>
 
-        <main>
+        <main class="main-intro">
+            <!-- Marquee Banner -->
+            <div class="marquee-container">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    ✨ Welcome to my portfolio! • Currently open for freelance
+                    projects • Let's create something amazing together! •
+                </marquee>
+            </div>
             <section class="intro">
                 <div class="profile-image">
                     <img src="images/profile.jpg" alt="Nabila Fitrie" />
+
+                    <!-- Audio Introduction -->
+                    <div class="audio-intro">
+                        <div class="audio-wrapper">
+                            <img
+                                src="images/love.gif"
+                                alt="Creative Animation"
+                            />
+                            <audio id="introAudio" controls>
+                                <source
+                                    src="audio/Fragments - AERØHEAD.mp3"
+                                    type="audio/mp3"
+                                />
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p class="audio-label">
+                            🎧 Listen to this soft ambience music
+                        </p>
+                    </div>
                 </div>
                 <div class="intro-text">
                     <h1>Hello, I'm Nabila</h1>
@@ -54,10 +81,10 @@
                     </div>
 
                     <div class="cta-buttons">
-                        <a href="resume.html" class="btn btn-primary"
+                        <a href="C2_resume.html" class="btn btn-primary"
                             >View Resume</a
                         >
-                        <a href="project.html" class="btn btn-secondary"
+                        <a href="C2_project.html" class="btn btn-secondary"
                             >See Projects</a
                         >
                     </div>
@@ -107,4 +134,5 @@
         </script>
     </body>
 </html>
+
 
